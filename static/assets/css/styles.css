@@ -11833,6 +11833,10 @@ body.dark-mode .card-body p {
     color: #ffffff;
 }
 
+body.dark-mode .card-body h2 {
+    color: #ffffff;
+}
+
 /* Button Styling */
 .btn-primary {
     background-color: #007bff;

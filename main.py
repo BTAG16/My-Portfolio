@@ -23,7 +23,6 @@ def resume():
     download_url = url_for('download_file', filename='my_cv.pdf')
     return render_template('resume.html', download_url=download_url)
 
-
 @app.route('/resume/<filename>')
 def download_file(filename):
     return send_from_directory('static', filename, as_attachment=True)

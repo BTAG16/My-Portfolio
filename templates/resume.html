@@ -10,7 +10,7 @@
                         <section>
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h2 class="text-primary fw-bolder mb-0">Experience</h2>
-                                <a class="btn btn-primary px-4 py-3" href="{{ download_url }}" target="_blank">
+                                <a class="btn btn-primary px-4 py-3" href="{{ url_for('download_file', filename='my_cv.pdf') }}" target="_blank">
                                     <div class="d-inline-block bi bi-download me-2"></div>
                                     Download Resume
                                 </a>
@@ -30,6 +30,7 @@
                                         </div>
                                         <div class="col-lg-8">
                                             <div>Completed an in-person Data Processing course covering computer appreciation, Windows OS, Microsoft Office Suite (Word, Excel, PowerPoint, Access), computer repairs, and graphics design (CorelDRAW).</div>
+                                            <a class="btn btn-primary btn-sm" href="{{ url_for('download_file', filename='comp_cert.pdf') }}" target="_blank">Download</a>
                                         </div>
                                     </div>
                                 </div>
@@ -49,6 +50,7 @@
                                         </div>
                                         <div class="col-lg-8">
                                             <div>Completed an intensive Python Bootcamp covering automation, web development, data analysis, and machine learning. Built multiple projects, including web apps and scripts.</div>
+                                            <a class="btn btn-primary btn-sm" href="{{ url_for('download_file', filename='py_cert.pdf') }}" target="_blank">Download</a>
                                         </div>
                                     </div>
                                 </div>
